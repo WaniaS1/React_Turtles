@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+html{
+  padding: 0;
+  margin: 0;
+}
+body{
+  --imgSize: 345px;
+  --leftTurtles: 20vw;
+  --bottomTurtles: 11vh;
+  --turtleWidth: 50px;
+  --cardHeight: 90px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(160, 185, 32);
+  background-image: url('../public/image/table.webp');
+  background-size: cover;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.App{
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: calc(20px + 2vmin);
+}
+.board{
+  position: relative;
+  text-align: center;
+}
+.board > .boardImg{
+  border: 4px solid black;
+  border-radius: 10px;
+}
+/* -------------------- Turtles ------------------------- */
+
+/* .board > .turtlesContainer > div:nth-of-type(2){
+  position: absolute;
+  right: 50px;
+  padding: 0px 5px;
+} */
+.turtlesContainer{
+  position: relative;
+  top: -60px;
+  display: grid;
+  width: 250px;
+  margin: 0 auto;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 10px;
+}
+.turtlesContainer > div{
+  position: relative;
+  transition: all 1s;
+  top: 0;
+}
+
+/* -------------------- Modals ------------------------- */
+.modal{
+  position: fixed;
+  width: 94vw;
+  padding: 100px 0;
+  top: 10vh;
+  left: 2vw;
+  background-color: rgba(196, 183, 83, 0.8);
+  border: 4px solid black;
+  border-radius: 10px;
+  transition: all 1s;
+}
+.modal.hidden{
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+.cards.hidden{
+  top: 30vh;
+}
+.cards{
+  padding: 0 0 20px 0;
+  background-color: rgba(146, 46, 104, 0.8);
+  top: 10vh;
+}
+.cards > .grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: left;
+}
+.card{
+  position: relative;
+  justify-self: center;
+  width: 60px;
+  height: var(--cardHeight);
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  line-height: 60px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  background-color: rgba(196, 183, 83, 0.8);
+  transition: all 500ms;
+}
+.card:hover{
+  cursor: pointer;
+  background-color: rgba(206, 193, 93, 0.8);
+  transform: scale(1.1); 
+  /* animation: hoverAnimation 0.15s forwards;  */
+}
+.myCards{
+  position: absolute;
+  left: 56vw;
+  top: 52vh;
+}
+
+.cards > .grid > .card > p{
+  margin: 0;
+  position: absolute;
+  top: calc(var(--cardHeight) - var(--cardHeight) / 2.6);
+}
+.card.hidden{
+  transition: all 500ms;
+  transform: rotateX(90deg);
+}
+/* .cards > .grid > div:nth-of-type(2) > img{
+  filter: invert(56%) sepia(51%) saturate(4672%) hue-rotate(238deg) brightness(92%) contrast(103%);
+} */
+/* .modal.cards > div{
+  border: 4px solid black;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+} */
+
+.btn{
+  display: block;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 40px auto 10px auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 8px 15px;
+  background-color: rgb(255, 235, 205);
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  transition: all 0.1s;
+}
+.btn:hover{
+  background-color: rgb(255, 245, 215);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* ---------------------- animations ----------------- */
+@keyframes hoverAnimation {
+  0% {
+
+  }
+  100%{
+    background-color: rgba(206, 193, 93, 0.8);
+    transform: scale(1.1);
+  }
+}
+@keyframes hideCard {
+  0% {
+    
+  }
+  100%{
+    transform: rotateX(90deg);
+  }
+}
+/* ---------------------- development ----------------- */
+.board > h2{
+  position: absolute;
+  left: 85vw;
+  top: 4vh;
+}

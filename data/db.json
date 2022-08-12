@@ -1,0 +1,36 @@
+{
+    "cards": [
+        {"id": 0, "color": "purple", "turtleId": 0,"move": 1},
+        {"id": 1, "color": "purple", "turtleId": 0,"move": 1},
+        {"id": 2, "color": "purple", "turtleId": 0,"move": 1},
+        {"id": 3, "color": "purple", "turtleId": 0,"move": 2},
+        {"id": 4, "color": "purple", "turtleId": 0,"move": -1},
+        {"id": 5, "color": "yellow", "turtleId": 1,"move": 1},
+        {"id": 6, "color": "yellow", "turtleId": 1,"move": 1},
+        {"id": 7, "color": "yellow", "turtleId": 1,"move": 1},
+        {"id": 8, "color": "yellow", "turtleId": 1,"move": 2},
+        {"id": 9, "color": "yellow", "turtleId": 1,"move": -1},
+        {"id": 10, "color": "blue", "turtleId": 2,"move": 1},
+        {"id": 11, "color": "blue", "turtleId": 2,"move": 1},
+        {"id": 12, "color": "blue", "turtleId": 2,"move": 1},
+        {"id": 13, "color": "blue", "turtleId": 2,"move": 2},
+        {"id": 14, "color": "blue", "turtleId": 2,"move": -1},
+        {"id": 15, "color": "green", "turtleId": 3,"move": 1},
+        {"id": 16, "color": "green", "turtleId": 3,"move": 1},
+        {"id": 17, "color": "green", "turtleId": 3,"move": 1},
+        {"id": 18, "color": "green", "turtleId": 3,"move": 2},
+        {"id": 19, "color": "green", "turtleId": 3,"move": -1},
+        {"id": 20, "color": "red", "turtleId": 4,"move": 1},
+        {"id": 21, "color": "red", "turtleId": 4,"move": 1},
+        {"id": 22, "color": "red", "turtleId": 4,"move": 1},
+        {"id": 23, "color": "red", "turtleId": 4,"move": 2},
+        {"id": 24, "color": "red", "turtleId": 4,"move": -1}
+      ],
+    "turtles": [
+      {"id": 0, "color": "purple"},
+      {"id": 1, "color": "yellow"},
+      {"id": 2, "color": "blue"},
+      {"id": 3, "color": "green"},
+      {"id": 4, "color": "red"}
+    ]
+}
